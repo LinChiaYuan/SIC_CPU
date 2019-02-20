@@ -1,0 +1,12 @@
+COPY   START   1000
+       LDA     FIVE
+LOOP   STA     ALPHA
+LOOP2  LDCH    CHARZ
+       STCH    C1
+ALPHA  RESW    1
+FIVE   WORD    5
+CHARZ  BYTE    C'Z'
+C1     RESB    1
+       END     COPY
+
+
